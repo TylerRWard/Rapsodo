@@ -45,11 +45,11 @@ def logIn():
     driver.implicitly_wait(2)
     UserBox = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '/html/body/app-root/app-guest/div/div/div/div/app-sign-in/section/form/div[1]/input')))
     #UserBox = driver.find_element(By.XPATH, '/html/body/app-root/app-guest/div/div/div/div/app-sign-in/section/form/div[1]/input')
-    UserBox.send_keys("Softball@lindenwood.edu")
+    UserBox.send_keys("Username")
     driver.implicitly_wait(2)
     #puts in password
     PassBox = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '/html/body/app-root/app-guest/div/div/div/div/app-sign-in/section/form/div[2]/input')))
-    PassBox.send_keys("LuSoftball1867!")
+    PassBox.send_keys("Password")
     driver.implicitly_wait(2)    
     #clicks log in
     LogIn = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '/html/body/app-root/app-guest/div/div/div/div/app-sign-in/section/form/div[4]/button')))
